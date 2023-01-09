@@ -1,0 +1,242 @@
+/* Datei: style.css */
+body { 
+	margin:0px;
+    font-family: "Helvetica";
+	font-color: black;
+}
+h1 { 
+	font-family: inherit;
+     font-size: 150%;
+     text-align: left;
+	 color:#FFFFFF;
+	 background: #FF8800;
+	 padding: 3px;
+}
+h1 + p {
+	 font-size: 100%;
+	 color: inherit;
+	 font-family: inherit;
+	 background: #FF8800;
+	 padding: 10px;
+}
+header { 
+	background: #FFFFFF;
+    padding: 2px;
+    text-align:center;
+}
+footer {	
+	hight: 150px;
+	padding: 10px;
+	text-align: center; 
+	background: #FF8800;
+	color: #FFFFFF
+}
+.logo {
+		display: block;
+		width: 500px;
+		line-height: 50px;
+		text-indent: 2rem;
+		text-align: left;
+		font-weight: bolder;
+		font-size: 150%;
+		color: #DA9006;
+		border-right: solid 5px #DA9006
+	
+}
+
+.BOX {
+			height: 50px;
+			background-color: #DA9006;
+			font-family: arial;
+			color: white;
+		}
+		.NAV {
+			align: right;
+			display: flex;											/* Ausrichtung der Navpunkte in Ebene 1 */
+			height: 50px;	
+			width: auto;
+			margin-left: 0;/* Breite der Navbar */
+			background-color: #F0C739;
+		}
+		.EBENE1, .EBENE2 a {										/* Formatierung aller Texte in der Navbar */
+			display: block;
+			line-height: 50px;
+			text-indent: 1rem;
+			text-decoration: none;
+			color: white;
+		}
+		.EBENE1 {													/* Navpunkte in Ebene 1 */
+			height: auto;
+			width: 250px;
+			background-color: transparent;
+			border-right: solid 5px #DA9006;						/* Rahmen zwischen den Navpunkten in Ebene 1 */
+		}
+		.EBENE1:hover {
+			background-color: #DA9006;
+		}
+		.EBENE2 {													/* Navpunkt in Ebene 2 */
+			display: none;											/* Navpunkte anfangs nicht sichtbar */
+			position: absolute;										/* Navpunkte überlappen nachfolgende Elemente */
+			height: auto;
+			width: 250px;
+			background-color: #F0C739;
+			text-align: left;
+			color: white;
+		}
+		.EBENE2 a:hover {
+			background-color: #DA9006;
+		}
+		.EBENE1:hover > .EBENE2 {									/* macht Ebene 2 sichtbar */
+			display: block;											/* durch Pseudoklasse Hover */
+		}
+
+
+p { 
+	font-family: inherit;
+}
+p > em {
+	font-family: inherit; 
+	font-size: 150%; 
+	font-style: normal; 
+	color: #CA9FCC;
+}
+li { 
+	font-family: inherit; 
+    padding: 0px 0px 0px 0px;
+    float: center;
+    list-style-type: none;
+    display: inline
+}
+article p { 
+	margin: 20px;
+	margin-right: 20px;
+	font-family: inherit;
+}
+article ul { 
+	margin: 20px; 
+}
+a:link { 
+	color: black; 
+}
+a:visited { 
+	color: orangered; 
+}
+a:hover {
+	color: orangered;
+}
+
+.sprechblase {
+position: relative;
+padding: 1rem;
+border: 4px solid #DA9006;
+margin-right: 200px;
+margin-left: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+background: white;}
+
+.sprechblase:before {
+content: ' ';
+position: absolute;
+width: 0;
+height: 0;
+left: 30px;
+top: 100%;
+border: 20px solid;
+border-color: #DA9006 transparent transparent #DA9006;}
+
+.sprechblase:after {
+content: ' ';
+position: absolute;
+width: 0;
+height: 0;
+left: 34px;
+top: 100%;
+border: 15px solid;
+border-color: white transparent transparent white;}
+
+.sprechblase2 {
+position: relative;
+padding: 1rem;
+border: 4px solid #DA9006;
+margin-right: 200px;
+margin-left: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+background: white;}
+
+.sprechblase2:before {
+content: ' ';
+position: absolute;
+width: 0;
+height: 0;
+left: 30px;
+top: 100%;
+border: 20px solid;
+border-color: #DA9006 transparent transparent #DA9006;}
+
+.sprechblase2:after {
+content: ' ';
+position: absolute;
+width: 0;
+height: 0;
+left: 34px;
+top: 100%;
+border: 15px solid;
+border-color: white transparent transparent white;}
+
+picture {
+   	margin-left: 100px;
+  	margin-right: 40px;
+  	margin-bottom: 50px
+}
+	.picture2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 30px;
+		margin-left: 100px;
+		margin-top: 0;
+}
+.food:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.food {
+	margin-left: 50px;
+}
+section {
+	display: flex;
+    align-items:center;
+}
+button {
+	padding: 15px 45px;
+			border-width: 2px;
+			border-style: solid;
+			border-color: white;											/* color immer erst nach style */
+			border-radius: 9px;
+}
+button:hover {  
+	opacity: 50%;
+}
+    .rosa {
+		color:#F38EEC;
+		background: #F38EEC;
+}
+    .gelb {
+		color: #F2E421;
+		background: #F2E421;
+}
+    .gruen {
+		color: #00DC37;
+		background: #00DC37;
+}
+    .blau {
+		color: #38ACEC;
+		background: #38ACEC;
+}
